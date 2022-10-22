@@ -10,15 +10,14 @@ class Vowel
 		System.out.print("ENter String :");
 		
 		int i,vol =0,con=0;
-		String s = sc.nextLine(); 		//next = for 1 word
-							//nextLine() = for line
-		s = s.toUpperCase();                    // upper case 
+		String s = sc.nextLine(); 		
+		s = s.toUpperCase();                    
 
 		for(i=0;i<s.length();i++)
 		{
 			char ch = s.charAt(i);
 
-			if(ch!=' ')                   //if ch is not= to space check vowel
+			if(ch!=' ')                   
 			{
 			     if(ch =='A' || ch=='E'|| ch=='I' || ch=='O' || ch=='U')
 			     {
