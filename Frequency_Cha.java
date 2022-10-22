@@ -9,15 +9,15 @@ class Frequency_Cha
 		
 		System.out.print("Enter a Sentence :");
 
-		String s = sc.nextLine();    //user sentence
-		s = s.toLowerCase();        //lower case convert
+		String s = sc.nextLine();    
+		s = s.toLowerCase();       
 		
 		System.out.println("Character / Frequency");
 
-		for(char ch='a'; ch<='z'; ch++)                   //loop a to z
+		for(char ch='a'; ch<='z'; ch++)                   
 		{
-			int count =0;                          //COUNT
-			for(int i=0; i<s.length(); i++)          //string traverse 
+			int count =0;                         
+			for(int i=0; i<s.length(); i++)          
 			{
 				if(ch==s.charAt(i))    //string 
 				count++;
