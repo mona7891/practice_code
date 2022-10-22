@@ -1,5 +1,5 @@
 import java.util.*;
-class Merge
+class Merge_Array
 {
 	public static int[] merge(int arr1[],int arr2[])
 	{
