@@ -1,24 +1,29 @@
 import java.util.*;
 class Array_reve
 {
-	public static void main(String args[])
-	{
-		int arr[] = {1,2,3,4,5};
+	public static void reverse(int arr[],int n)
+        {
+                int b[] = new int[n];
+                int j = n;
 
-		System.out.println("Orignal Array");
-		
-		for(int i=0;i<arr.length;i++) 
-		{
-			System.out.print(arr[i]+" ");
-		}
-		System.out.println();
-	
-		System.out.println("Array in Reverse order:");
+                for(int i=0;i<n;i++)
+                {
+                        b[j-1] = arr[i];
+                        j=j-1;
+                }
+                System.out.println("Reverse Array Are :");
 
-		for(int i=arr.length-1;i>=0;i--)
-		{
-			System.out.print(arr[i]+" ");
-		}	
-		System.out.println();
-	}
+                for(int k=0;k<n;k++)
+                {
+                        System.out.print(b[k]+" ");
+                }
+                System.out.println();
+        }
+        public static void main(String args[])
+        {
+                int arr[] = {10,20,30,40,50,60};
+
+                reverse(arr,arr.length);
+        }
 }
+
